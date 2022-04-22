@@ -23,7 +23,6 @@ class PCF {
         return (0);
       }
     }
-
     void write(byte n,bool e)
     {
       bitWrite(estado,n,e);
@@ -31,40 +30,9 @@ class PCF {
       Wire.write(estado+pin);
       Wire.endTransmission();
     }
-
-    void pinout(byte n) {
-      pin+=pinToBin(n);
+    void pinout(byte n,bool e) {
+       bitWrite(pin,n,e);
     }
-    
-    byte pinToBin(byte n) {
-      switch (n) {
-        case 0:
-          return 1;
-          break;
-        case 1:
-          return 2;
-          break;
-        case 2:
-          return 4;
-          break;
-        case 3:
-          return 8;
-          break;
-        case 4:
-          return 16;
-          break;
-        case 5:
-          return 32;
-          break;
-        case 6:
-          return 64;
-          break;
-        case 7:
-          return 128;
-          break;
-      }
-    }
-
 };
 
 #endif
