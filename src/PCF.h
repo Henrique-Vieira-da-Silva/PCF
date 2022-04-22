@@ -27,7 +27,6 @@ class PCF {
     void write(byte n,bool e)
     {
       bitWrite(estado,n,e);
-      Serial.println(estado+pin,BIN);
       Wire.beginTransmission(end);
       Wire.write(estado+pin);
       Wire.endTransmission();
