@@ -1,0 +1,18 @@
+#######################################
+# Syntax Coloring Map PCF
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+PCF	KEYWORD1	PCF
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+read	KEYWORD2
+write	KEYWORD2
+pinout	KEYWORD2
+pinToBin	KEYWORD2
+
